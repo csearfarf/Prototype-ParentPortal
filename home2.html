@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+
+	
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+	<script src="https://kit.fontawesome.com/18939acf28.js" crossorigin="anonymous"></script>
+</head>
+
+
+<style>
+
+	*{
+		font-family: 'Poppins';
+    
+	}
+
+    body {
+        background: white;
+    }
+
+    .mainDiv {
+		background: #f7fafc;
+		width: 100%;
+		height: 99vh;
+		margin-top:1vh;
+		border-top-left-radius: 20px;
+		border-bottom-left-radius: 20px;
+		padding: 50px;
+	}
+
+    .sideNav {
+		width: 270px;
+		height: 100vh;
+	}
+
+    .sideNav-item-header {
+		text-align: center;
+	    padding: 10px;
+        color: #1e4c2b;
+	}
+
+    .sideNav-item {
+		text-align: left;
+	    padding: 15px 15px 15px 30px;
+        font-size: 15px;
+        font-weight: 200;
+        margin-left: 20px;
+        margin-top: 10px;
+        color: #1e4c2b;
+	}
+
+    .sideNav-item i {
+        width: 25px;
+    }
+
+	.sideNav-item:hover {
+		cursor: pointer;
+	}
+
+    .sideNav-item.active {
+        background:#f7fafc;
+        color: #1e4c2b;
+        font-weight: bold;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .sys_logo_side_nav {
+        width: 55px;
+        height: 55px;
+	    border-radius: 50px;
+	    padding: 5px;
+        margin-top: 10px;
+    }
+
+    .sys_header{
+        font-size: 50px;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .sys_name{
+        font-size: 12px;
+        letter-spacing: 3px;
+    }
+
+    .partition {
+        width: 100%;
+        height:1px;
+        background: #1e4c2b;
+        margin-bottom: 10px;
+    }
+
+    .card {
+        padding: 20px;
+        border: none;
+    }
+
+	
+</style>
+
+<body>
+
+    <div class="d-flex">
+
+        <div class="flex-fill">
+            <div class="sideNav">
+
+                <div class="d-flex flex-column mb-4">
+                    <div class="d-flex justify-content-center">
+                        <div class="sideNav-item-header mt-4">
+                            <div class="d-flex">
+                                <img src="Images/logo_ism_green.png" class="sys_logo_side_nav">
+                                <div class="flex-fill">
+                                    <p class="sys_header mb-0">ISM</p>
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="partition"></div>
+                            <span class="sys_name mt-2">PARENT PORTAL</span>
+                        </div>
+                    </div> 
+                </div>
+                
+
+                <div class="sideNav-item active">
+                    <i class="fa-light fa-house"></i> <span>Home</span>
+                </div>
+                <div class="sideNav-item">
+                    <i class="fa-light fa-note"></i> <span>Re-Enrollment</span>
+                </div>
+                <div class="sideNav-item">
+                    <i class="fa-light fa-bus"></i> <span>Elementary School</span>
+                </div>
+                <div class="sideNav-item">
+                    <i class="fa-light fa-book"></i> <span>Middle School</span>
+                </div>
+                <div class="sideNav-item">
+                    <i class="fa-light fa-atom-simple"></i> <span>High School</span>
+                </div>
+                <div class="sideNav-item">
+                    <i class="fa-light fa-cloud-arrow-down"></i> <span>Downloads</span>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="flex-fill w-100">
+            <div class="mainDiv">
+
+                <div class="col-md-6">
+                    <div class="card shadow-sm">
+                        <p class="mb-0">Reports</p>
+                        <span>List of reports for School Year 2022-2023</span>
+                       
+                    </div>
+                </div>
+
+
+                <div class="col-md-6">
+
+                </div>
+
+
+                
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+
+
+</html>
+
+

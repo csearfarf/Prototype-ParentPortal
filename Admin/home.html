@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css"/>
+    <link rel="stylesheet" href="../style-mobile.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css" integrity="sha512-ELV+xyi8IhEApPS/pSj66+Jiw+sOT1Mqkzlh8ExXihe4zfqbWkxPRi8wptXIO9g73FSlhmquFlUOuMSoXz5IRw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<script src="https://kit.fontawesome.com/18939acf28.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="text/javascript" src="../script.js"></script>
+
+</head>
+
+<script>
+    $(function(){
+        $("#sortable-section-right").sortable();
+    });
+</script>
+
+
+<body>
+
+    <div class="d-flex">
+
+        <div class="flex-fill">
+            <div class="sideNav sticky-top">
+                <div class="d-flex flex-column mb-4">
+                    <div class="d-flex justify-content-center">
+                        <div class="sideNav-item-header mt-4">
+                            <div class="d-flex">
+                                <img src="../Images/logo_ism.png" class="sys_logo_side_nav">
+                                <div class="flex-fill">
+                                    <p class="sys_header mb-0">ISM</p>
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="partition"></div>
+                            <span class="sys_name mt-2">PARENT PORTAL</span><br>
+                            <span class="badge bg-success">ADMIN</span>
+                        </div>
+                    </div> 
+                </div>
+                
+                <a href="home.html">
+                    <div class="sideNav-item active">
+                        <i class="fa-light fa-house"></i> <span>Home</span>
+                    </div>
+                </a>
+                <a href="es.html">
+                    <div class="sideNav-item">
+                        <i class="fa-light fa-bus"></i> <span>Elementary School</span>
+                    </div>
+                </a>
+                <a href="ms.html">
+                    <div class="sideNav-item">
+                        <i class="fa-light fa-book"></i> <span>Middle School</span>
+                    </div>
+                </a>
+                <a href="hs.html">
+                    <div class="sideNav-item">
+                        <i class="fa-light fa-atom-simple"></i> <span>High School</span>
+                    </div>
+                </a>
+                <a href="downloads.html">
+                    <div class="sideNav-item d-none">
+                        <i class="fa-light fa-cloud-arrow-down"></i> <span>Downloads</span>
+                    </div>
+                </a>
+                <a href="settings.html">
+                    <div class="sideNav-item">
+                        <i class="fa-light fa-atom-simple"></i> <span>Settings</span>
+                    </div>
+                </a>
+
+
+            </div>
+        </div>
+
+        <div class="flex-fill w-100">
+            <div class="mainDiv">
+
+                <div class="d-flex mb-4">
+				
+                    <div class="flex-grow-1 ms-3 align-self-center">
+                      <div class="lh-1">
+                          <h2>ADMIN <span>HOME</span></h2>
+                      </div>
+                    </div>
+  
+  
+                    <div id="divProfile" class="flex-shrink-0 align-self-center">
+                        <div class="d-flex">
+                          <div class="flex-fill profile-name">
+                              <p class="mb-0 fw-bold">Rosel Ann</p>
+                              <small style="color:gray">labradorr@ismanila.org</small>
+                          </div>
+                          <img src="../Images/icon_profile.png" class="profile-login">
+                        </div>
+                    </div>
+  
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-5 col-12">
+                        <div class="card shadow-sm mb-3">
+                            <h5 class="mb-0">Reports</h5>
+                            <small>List of reports for School Year 2022-2023</small>
+    
+                            <br>
+    
+                            <div class="d-flex flex-sm-row flex-column">
+                                <div class="d-flex flex-grow-1">
+                                    <div class="flex-shrink-0">
+                                        <img src="../Images/icon_profile.png" class="profile"/>
+                                    </div>
+                                    <div class="flex-grow-1 ms-2">
+                                        <h6 class="mb-0">Ananda Rain</h6>
+                                        <small>121239 - Grade 11</small>
+                                    </div>
+                                </div>
+                                
+                                <div class="align-items-end mt-2 ms-5">
+                                    <i class="fa-solid fa-file-lines report-file file-rc" data-bs-toggle="tooltip" data-bs-placement="top" title="Report Card"></i>
+                                    <i class="fa-solid fa-file-lines report-file file-cas" data-bs-toggle="tooltip" data-bs-placement="top" title="CAS"></i>
+                                    <i class="fa-solid fa-file-lines report-file file-esl" data-bs-toggle="tooltip" data-bs-placement="top" title="ESL"></i>
+                                </div>
+                                
+                            </div>
+    
+                            <hr class="dashed">
+    
+                            <div class="d-flex flex-sm-row flex-column">
+                                <div class="d-flex flex-grow-1">
+                                    <div class="flex-shrink-0">
+                                        <img src="../Images/icon_profile.png" class="profile"/>
+                                    </div>
+                                    <div class="flex-grow-1 ms-2">
+                                        <h6 class="mb-0">Jampa Ray</h6>
+                                        <small>151242 - Grade 3</small>
+                                    </div>
+                                </div>
+                                
+                                <div class="align-items-end mt-2 ms-5">
+                                    <i class="fa-solid fa-file-lines report-file file-rc" data-bs-toggle="tooltip" data-bs-placement="top" title="Report Card"></i>
+                                    <i class="fa-solid fa-file-lines report-file file-cas" data-bs-toggle="tooltip" data-bs-placement="top" title="CAS"></i>
+                                    <i class="fa-solid fa-file-lines report-file file-map" data-bs-toggle="tooltip" data-bs-placement="top" title="MAP"></i>
+                                    <i class="fa-solid fa-file-lines report-file file-hc" data-bs-toggle="tooltip" data-bs-placement="top" title="HC"></i>
+                                    <i class="fa-solid fa-file-lines report-file file-esl" data-bs-toggle="tooltip" data-bs-placement="top" title="ESL"></i>
+                                </div>
+                                
+                            </div>
+
+                            <hr class="dashed">
+    
+                            <div class="d-flex flex-sm-row flex-column">
+                                <div class="d-flex flex-grow-1">
+                                    <div class="flex-shrink-0">
+                                        <img src="../Images/icon_profile.png" class="profile"/>
+                                    </div>
+                                    <div class="flex-grow-1 ms-2">
+                                        <h6 class="mb-0">Shanti Skye</h6>
+                                        <small>121240 - Grade 8</small>
+                                    </div>
+                                </div>
+                                
+                                <div class="align-items-end mt-2 ms-5">
+                                    <i class="fa-solid fa-file-lines report-file file-rc" data-bs-toggle="tooltip" data-bs-placement="top" title="Report Card"></i>
+                                    <i class="fa-solid fa-file-lines report-file file-cas" data-bs-toggle="tooltip" data-bs-placement="top" title="CAS"></i>
+                                    <i class="fa-solid fa-file-lines report-file file-map" data-bs-toggle="tooltip" data-bs-placement="top" title="MAP"></i>
+                                    <i class="fa-solid fa-file-lines report-file file-hc" data-bs-toggle="tooltip" data-bs-placement="top" title="HC"></i>
+                                </div>
+                                
+                            </div>
+    
+                           
+                        </div>
+    
+                        <div class="card shadow-sm mb-3">
+                            <h5 class="mb-0">Quicklinks</h5>
+                            <small>Frequently used or important hyperlinks</small>
+
+                            <div class="row mt-3">
+                                
+                                <div class="col col-xs-6 col-md-4 mb-3">
+                                    <div class="quick-item">
+                                        <img src="../Images/logo_bearcats.png"><br>
+                                        <div class="quick-name">Elementary PTC
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-6 col-md-4 mb-3">
+                                    <div class="quick-item">
+                                        <img src="../Images/logo_bearcats.png"><br>
+                                        <div class="quick-name">BEARCard Portal
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-6 col-md-4 mb-3">
+                                    <div class="quick-item">
+                                        <img src="../Images/logo_bearcats.png"><br>
+                                        <div class="quick-name">Athletics Game
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="col-xs-6 col-md-4 mb-3">
+                                    <div class="quick-item">
+                                        <img src="../Images/logo_bearcats.png"><br>
+                                        <div class="quick-name">Bearcat Summer
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-6 col-md-4 mb-3">
+                                    <div class="quick-item">
+                                        <img src="../Images/logo_bearcats.png"><br>
+                                        <div class="quick-name">ATAC Registration
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-6 col-md-4 mb-3">
+                                    <div class="quick-item">
+                                        <img src="../Images/logo_bearcats.png"><br>
+                                        <div class="quick-name">Live Stream
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                       
+                    </div>
+    
+                    
+    
+                    <div class="col-lg-7 col-12">
+                        <div id="btn-right-new" class="newButton mb-3 d-flex text-center">
+                            <span class="align-self-center w-100"><i class="fa-regular fa-square-plus"></i> Add new widget</span>
+                        </div>
+                        
+                        <div class="accordion accordion-flush" id="accordionHome">
+                            <ul id="sortable-section-right" class="div-slot-right">
+                                <li>
+                                    <!-- Parent Guide -->
+                                    <div class="accordion-item">
+                                        <div class="card shadow-sm mb-3 card-right">
+                                            <div class="d-flex accordion-button" data-bs-toggle="collapse" data-bs-target="#flush-guide" aria-expanded="false" aria-controls="flush-guide">
+                                                <div class="flex-grow-1 align-self-center">
+                                                    <h5 class="mb-0">Parent Guide</h5>
+                                                    <small>Information and guidance resources</small>
+                                                </div>                               
+                                            </div>
+
+                                            <div id="flush-guide" class="accordion-collapse collapse show" data-bs-parent="#accordionHome">
+                                                <div class="accordion-body loader-search">
+                                                    <iframe class="mt-3" style="width:100%;height:400px;" src="https://online.anyflip.com/bxvn/tcob/index.html" seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true"></iframe>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- End of Parent Guide -->
+                                </li>
+
+                                <li>
+                                    <!-- Academic Calendar -->
+                                    <div class="accordion-item">
+                                        <div class="card shadow-sm mb-3 card-right">
+                                            <div class="d-flex accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#flush-calendar" aria-expanded="false" aria-controls="flush-calendar">
+                                                <div class="flex-grow-1 align-self-center">
+                                                    <h5 class="mb-0">Academic Calendar</h5>
+                                                    <small>Important dates and deadlines</small>
+                                                </div>                               
+                                            </div>
+
+                                            <div id="flush-calendar" class="accordion-collapse collapse" data-bs-parent="#accordionHome">
+                                                <div class="accordion-body loader-search">
+                                                    <iframe class="mt-3" style="width:100%;height:400px" src="https://online.anyflip.com/bxvn/pkrs/mobile/" seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true"></iframe>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- End of Academic Calendar -->
+                                </li>
+
+                                <li>
+                                    <!-- Announcements -->
+                                    <div class="accordion-item">
+                                        <div class="card shadow-sm mb-3 card-right">
+                                            <div class="d-flex accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#flush-annoucements" aria-expanded="false" aria-controls="flush-annoucements">
+                                                <div class="flex-grow-1 align-self-center">
+                                                    <h5 class="mb-0">Announcements</h5>
+                                                    <small>Important information, events and updates</small>
+                                                </div>                               
+                                            </div>
+
+                                            <div id="flush-annoucements" class="accordion-collapse collapse" data-bs-parent="#accordionHome">
+                                                <div class="accordion-body loader-search">
+                                                    <div class="responsive-google-slides">
+                                                        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQnebHeXNnBr1ZAuB7HsINR_FcF4oj5Px0f-Nsg1_1i3aJcIdQCFruUB7qz41tefPiA-cEjt-K08lt-/embed?start=true&loop=true&delayms=10000&&output=pdf&format=pdf" 
+                                                            frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- End of Announcements -->
+                                </li>
+
+                            </ul>
+                            
+
+
+                           
+                        </div>
+
+                        
+
+                        
+    
+                    </div>
+                </div>
+                
+
+
+
+                <!-- Add Widget Modal -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Selected Widget Type</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+
+                            <div class="modal-body">
+                                <div class="input-group mb-3">
+                                    <label class="input-group-text" for="inputGroupSelect01">Widgets</label>
+                                    <select id="ddl-widget" class="form-select" id="inputGroupSelect01">
+                                        <option value="flip">Flip Book</option>
+                                        <option value="slides">Google Slides</option>
+                                        <option value="pdf">PDF</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-floating mb-3">
+                                    <input id="txtTitle" type="text" class="form-control" id="floatingInput">
+                                    <label>Widget Title</label>
+                                </div>
+
+                                <div class="form-floating mb-3">
+                                    <input id="txtSubtitle" type="text" class="form-control" id="floatingInput">
+                                    <label>Widget Sub-Title</label>
+                                </div>
+
+                                <div class="form-floating mb-3">
+                                    <input id="txtLink" type="text" class="form-control" id="floatingInput">
+                                    <label>Link</label>
+                                </div>
+
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button id="add-widget-right" type="button" class="btn btn-success">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Add Widget Modal -->
+
+
+                
+            </div>
+
+            <div class="d-flex sideNav-mobile">
+				<div class="flex-fill align-self-start sideNav-mobile-item active">  		
+                    <i class="fa-light fa-house"></i><br>
+                    <span>Home</span>
+				</div>
+                
+				<div class="flex-fill align-self-start">
+				 	<div class="sideNav-mobile-item">			  		
+						<i class="fa-light fa-bus"></i><br>
+						<span>ES</span>
+					</div>
+				</div>
+				<div class="flex-fill align-self-start">
+				 	<div class="sideNav-mobile-item">			  		
+						<i class="fa-light fa-book"></i><br>
+						<span>MS</span>
+					</div>
+				</div>
+				<div class="flex-fill align-self-start">
+				 	<div class="sideNav-mobile-item">			  		
+						<i class="fa-light fa-atom-simple"></i><br>
+						<span>HS</span>
+					</div>
+				</div>
+                <div class="flex-fill align-self-start d-none">
+                    <div class="sideNav-mobile-item">			  		
+                       <i class="fa-light fa-cloud-arrow-down"></i><br>
+                       <span>Downloads</span>
+                   </div>
+               </div>
+			</div>
+        </div>
+
+    </div>
+
+   
+</body>
+<script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+    });
+</script>
+
+<script>
+
+    $("#btn-right-new").click(function() {
+        //new_flipbook();
+
+        $("#staticBackdrop").modal("show");
+    });
+
+    $("#add-widget-right").click(function() {
+        var widget = $("#ddl-widget option:selected").val();;
+        var title = $("#txtTitle").val();
+        var subtitle = $("#txtSubtitle").val();
+        var link = $("#txtLink").val();
+        var permalink = title.replace(/[^a-z0-9\s]/gi, '').replace(/[_\s]/g, '-');
+
+        if(widget == "flip"){
+            new_flipbook(title, subtitle, link, permalink);
+        }
+
+        if(widget == "slides"){
+            new_slides(title, subtitle, link, permalink);
+        }
+
+        if(widget == "pdf"){
+            new_pdf(title, subtitle, link, permalink);
+        }
+
+        $("#staticBackdrop").modal("hide");
+        ClearInputs();
+      
+    });
+
+
+
+    
+</script>
+
+
+</html>
+
+
