@@ -1,0 +1,161 @@
+
+/* Mobile */
+
+
+.sideNav-mobile {
+    height: 11.5vh;
+    padding: 0px 15px;
+
+}
+
+.sideNav-mobile-item {
+    text-align: center;
+    padding: 15px 5px;
+}
+
+.sideNav-mobile-item:hover {
+    cursor: pointer;
+}
+
+.sideNav-mobile-item i {
+    font-size: 22px;
+    background: #2f6240;
+    border-radius: 50%;
+    padding:10px;
+    color: white;
+    width: 45px;
+    height: 45px;
+}
+
+.sideNav-mobile-item span {
+    font-size: 9px;
+    color: #cdd5cf;
+}
+
+.sideNav-mobile-item.active > i, .sideNav-mobile-item:hover > i {
+    background: #f7fafc;
+    color: #2f6240;
+    transition: 0.3s;
+}
+
+.sideNav-mobile-item.active > span, .sideNav-mobile-item:hover > span {
+    color: #2f6240;
+    font-weight: bold;
+}
+
+.sideNav-mobile-item.active, .sideNav-mobile-item:hover{
+    background: #f7fafc;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: 0.3s;
+}
+
+.req-item-mobile{
+    font-size: 14px;
+}
+
+#tbl-req-status-mobile {
+    width: 100%;
+    table-layout: fixed;
+}
+
+#tbl-req-status-mobile tbody tr td {
+    padding: 8px 5px 0px 5px;
+    text-align: center;
+}
+
+#tbl-req-status-mobile tbody tr td > span {
+    float: left;
+    text-align: left;
+}
+
+#tbl-req-status-mobile tr th {
+    padding: 2px 5px;
+    line-height: 1;
+    font-size: 13px;
+    padding-bottom: 8px;
+    border-bottom: 1px dashed #d1cbcb;
+}
+
+@media only screen and (max-width: 1000px) {
+    .div-req{
+        display: none;
+    }
+
+    .div-req-mobile{
+        display: inline;
+    }
+
+    .status-check {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .sideNav-mobile {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .sideNav{
+        display: none;
+    }
+
+    .mainDiv {
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border-top-left-radius: 0px;
+        height: 87.5vh;
+        padding: 30px;
+        overflow-y: auto;
+        margin-top: 0px;
+    }
+
+    .profile-name{
+        display: none;
+    }
+
+    .mainDiv h5 {
+        font-size: calc(110% - 2px);
+    }
+
+    .mainDiv h6 {
+        font-size: calc(120% - 4px);
+    }
+
+    .mainDiv small {
+        font-size: calc(100% - 4px);
+    }
+}
+
+
+@media only screen and (max-width: 575px) {
+    .report-file{
+        font-size: 20px;
+        margin-right: 2px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    h2 {
+        font-size: 18px;
+    }
+
+    .profile-login{
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media only screen and (max-width: 385px) {
+    .sideNav-mobile-item > span, .sideNav-mobile-item > br{
+        display: none;
+    }
+
+    .sideNav-mobile {
+        height: 8.5vh;
+    }
+}
+
+
