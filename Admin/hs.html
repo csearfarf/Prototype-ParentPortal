@@ -221,6 +221,18 @@
                                 <li>
                                     <!-- HS Bulletin -->
                                     <div class="accordion-item">
+
+                                        <!-- Action buttons -->
+                                        <div class="d-flex justify-content-between widget-action-buttons">
+                                            <img src="../Images/img-book.png">
+                                            <div>
+                                                <i class="fa-solid fa-pencil"></i>
+                                                <i class="fa-solid fa-trash ms-1"></i>
+                                            </div>
+                                        </div>
+                                        <!-- End of action buttons -->
+
+
                                         <div class="card shadow-sm mb-3 card-right">
                                             <div class="d-flex accordion-button" data-bs-toggle="collapse" data-bs-target="#flush-bulletin" aria-expanded="false" aria-controls="flush-bulletin">
                                                 <div class="flex-grow-1 align-self-center">
@@ -243,6 +255,18 @@
                                 <li>
                                     <!-- HS Student Handbook -->
                                     <div class="accordion-item">
+
+                                        <!-- Action buttons -->
+                                        <div class="d-flex justify-content-between widget-action-buttons">
+                                            <img src="../Images/img-book.png">
+                                            <div>
+                                                <i class="fa-solid fa-pencil"></i>
+                                                <i class="fa-solid fa-trash ms-1"></i>
+                                            </div>
+                                        </div>
+                                        <!-- End of action buttons -->
+
+
                                         <div class="card shadow-sm mb-3 card-right">
                                             <div class="d-flex accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#flush-handbook" aria-expanded="false" aria-controls="flush-handbook">
                                                 <div class="flex-grow-1 align-self-center">
@@ -266,6 +290,18 @@
                                 <li>
                                     <!-- HS Announcements -->
                                     <div class="accordion-item">
+
+                                        <!-- Action buttons -->
+                                        <div class="d-flex justify-content-between widget-action-buttons">
+                                            <img src="../Images/img-slides.png">
+                                            <div>
+                                                <i class="fa-solid fa-pencil"></i>
+                                                <i class="fa-solid fa-trash ms-1"></i>
+                                            </div>
+                                        </div>
+                                        <!-- End of action buttons -->
+
+
                                         <div class="card shadow-sm mb-3 card-right">
                                             <div class="d-flex accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#flush-announcements" aria-expanded="false" aria-controls="flush-announcements">
                                                 <div class="flex-grow-1 align-self-center">
@@ -303,14 +339,14 @@
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="staticBackdropLabel">Selected Widget Type</h5>
+                                <h5 class="modal-title" id="staticBackdropLabel">Select Widget Type</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
 
                             <div class="modal-body">
                                 <div class="input-group mb-3">
-                                    <label class="input-group-text" for="inputGroupSelect01">Widgets</label>
-                                    <select id="ddl-widget" class="form-select" id="inputGroupSelect01">
+                                    <label class="input-group-text">Widgets</label>
+                                    <select id="ddl-widget" class="form-select">
                                         <option value="flip">Flip Book</option>
                                         <option value="slides">Google Slides</option>
                                         <option value="pdf">PDF</option>
@@ -318,19 +354,31 @@
                                 </div>
 
                                 <div class="form-floating mb-3">
-                                    <input id="txtTitle" type="text" class="form-control" id="floatingInput">
+                                    <input id="txtTitle" type="text" class="form-control keyup-widget-selection" id="floatingInput">
                                     <label>Widget Title</label>
                                 </div>
 
                                 <div class="form-floating mb-3">
-                                    <input id="txtSubtitle" type="text" class="form-control" id="floatingInput">
+                                    <input id="txtSubtitle" type="text" class="form-control keyup-widget-selection" id="floatingInput">
                                     <label>Widget Sub-Title</label>
                                 </div>
 
                                 <div class="form-floating mb-3">
-                                    <input id="txtLink" type="text" class="form-control" id="floatingInput">
+                                    <input id="txtLink" type="text" class="form-control keyup-widget-selection" id="floatingInput">
                                     <label>Link</label>
                                 </div>
+
+                                <!-- Alert messages -->
+                                <div id="alert-no-widget-selected" class="alert alert-info d-flex align-items-center d-none" role="alert">
+                                    <i class="fa-solid fa-square-info me-2 small"></i>
+                                    <div class="small">Please select a widget type</div>
+                                </div>
+
+                                <div id="alert-id-exists" class="alert alert-warning d-flex align-items-center d-none" role="alert">
+                                    <i class="fa-solid fa-square-exclamation me-2 small"></i>
+                                    <div class="small">Title already exists</div>
+                                </div>
+                                <!-- End of alert messages -->
 
                             </div>
 
@@ -346,6 +394,58 @@
                 
             </div>
 
+            <!-- Side Navigation - Mobile -->
+            <div class="d-flex sideNav-mobile">
+				<div class="flex-fill align-self-start">
+                    <a href="home.html">
+                        <div class="sideNav-mobile-item">	 		
+                            <i class="fa-light fa-house"></i><br>
+                            <span>Home</span>
+                        </div>
+                    </a>
+				</div>
+				<div class="flex-fill align-self-start d-none">
+                    <a href="reenrollment.html">
+                        <div class="sideNav-mobile-item">	
+                            <i class="fa-light fa-note"></i><br>
+                            <span>Re-Enrollment</span>
+                        </div>
+                    </a>
+				</div>
+				<div class="flex-fill align-self-start">
+                    <a href="es.html">
+                        <div class="sideNav-mobile-item">			  		
+                            <i class="fa-light fa-bus"></i><br>
+                            <span>ES</span>
+                        </div>
+                    </a>
+				</div>
+				<div class="flex-fill align-self-start">
+                    <a href="ms.html">
+                        <div class="sideNav-mobile-item">			  		
+                            <i class="fa-light fa-book"></i><br>
+                            <span>MS</span>
+                        </div>
+                    </a>
+				</div>
+				<div class="flex-fill align-self-start">
+                    <a href="hs.html">
+                        <div class="sideNav-mobile-item active">			  		
+                            <i class="fa-light fa-atom-simple"></i><br>
+                            <span>HS</span>
+                        </div>
+                    </a>
+				</div>
+                <div class="flex-fill align-self-start d-none">
+                    <a href="downloads.html">
+                        <div class="sideNav-mobile-item">			  		
+                            <i class="fa-light fa-cloud-arrow-down"></i><br>
+                            <span>Downloads</span>
+                        </div>
+                    </a>
+               </div>
+			</div>
+            <!-- End of Side Navigation - Mobile -->
            
         </div>
 
@@ -359,8 +459,6 @@
 <script>
 
     $("#btn-right-new").click(function() {
-        //new_flipbook();
-
         $("#staticBackdrop").modal("show");
     });
 
@@ -382,10 +480,6 @@
         if(widget == "pdf"){
             new_pdf(title, subtitle, link, permalink);
         }
-
-        $("#staticBackdrop").modal("hide");
-        ClearInputs();
-      
     });
 
 
