@@ -234,9 +234,19 @@ h2 span{
     background: #a9a436;
 }
 
-.quick-item img{
-    width: 100%;
-    max-width: 100px;
+.quick-item:hover > i {
+    color: white;
+}
+
+.quick-item:hover > .quick-name {
+    background: white;
+    color: #a9a436;
+}
+
+.quick-item i{
+    font-size: 80px;
+    color: #a9a436;
+    padding: 8px;
 }
 
 .quick-name {

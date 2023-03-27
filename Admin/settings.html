@@ -16,10 +16,10 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css" integrity="sha512-ELV+xyi8IhEApPS/pSj66+Jiw+sOT1Mqkzlh8ExXihe4zfqbWkxPRi8wptXIO9g73FSlhmquFlUOuMSoXz5IRw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-	<script src="https://kit.fontawesome.com/18939acf28.js" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/cbb8b7ea9e.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js" integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script type="text/javascript" src="../Scripts/custom-js.js"></script>
@@ -71,6 +71,21 @@
                         <i class="fa-light fa-atom-simple"></i> <span>High School</span>
                     </div>
                 </a>
+                <a href="athletics.html">
+                    <div class="sideNav-item">
+                        <i class="fa-light fa-whistle"></i> <span>Athletics</span>
+                    </div>
+                </a>
+                <a href="activities.html">
+                    <div class="sideNav-item">
+                        <i class="fa-light fa-person-running"></i> <span>Activities</span>
+                    </div>
+                </a>
+                <a href="finearts.html">
+                    <div class="sideNav-item">
+                        <i class="fa-light fa-masks-theater"></i> <span>Fine Arts</span>
+                    </div>
+                </a>
                 <a href="settings.html">
                     <div class="sideNav-item active">
                         <i class="fa-light fa-atom-simple"></i> <span>Settings</span>
@@ -110,9 +125,66 @@
   
                 </div>
 
+                <style>
+                    .nav-link {
+                        color: #404040;
+                    }
+                    
+                    .nav-link:hover {
+                        color: #404040;
+                    }
+                </style>
                 
                 <div class="row">
-                    <div class="col-lg-5 col-12">
+                    <div class="col-lg-12 col-12">
+
+
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs mt-3" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-bs-toggle="tab" href="#quicklinks">Quicklinks</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#widgets">Widgets</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#parents">Parents</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#admins">Administrators</a>
+                            </li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div id="quicklinks" class="card tab-pane active"><br>
+<!-- 
+                                <table class="table">
+                                    <thead class="table-dark">
+                                      ...
+                                    </thead>
+                                    <tbody>
+                                      ...
+                                    </tbody>
+                                  </table> -->
+
+
+                            </div>
+                            <div id="widgets" class="card tab-pane fade"><br>
+                                <!-- <h3>Menu 1</h3>
+                                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> -->
+                            </div>
+                            <div id="parents" class="card tab-pane fade"><br>
+                                <!-- <h3>Menu 2</h3>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p> -->
+                            </div>
+                            <div id="admins" class="card tab-pane fade"><br>
+                                <!-- <h3>Menu 2</h3>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p> -->
+                            </div>
+                        </div>
+
+                        
                     </div>
                     
                     

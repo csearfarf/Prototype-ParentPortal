@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+
+	
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Stylesheet/style.css"/>
+    <link rel="stylesheet" href="../Stylesheet/style-mobile.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css" integrity="sha512-ELV+xyi8IhEApPS/pSj66+Jiw+sOT1Mqkzlh8ExXihe4zfqbWkxPRi8wptXIO9g73FSlhmquFlUOuMSoXz5IRw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<script src="https://kit.fontawesome.com/cbb8b7ea9e.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="text/javascript" src="../Scripts/custom-js.js"></script>
+</head>
+
+
+<script>
+    $(function(){
+        $("#sortable-section-right").sortable();
+        $("#sortable-section-left").sortable();
+    });
+</script>
+
+<body>
+
+    
+    <div class="d-flex">
+
+        <div class="flex-fill">
+            <div class="sideNav sticky-top">
+                <div class="d-flex flex-column mb-4">
+                    <div class="d-flex justify-content-center">
+                        <div class="sideNav-item-header mt-4">
+                            <div class="d-flex">
+                                <img src="../Images/logo_ism.png" class="sys_logo_side_nav">
+                                <div class="flex-fill">
+                                    <p class="sys_header mb-0">ISM</p>
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="partition"></div>
+                            <span class="sys_name mt-2">PARENT PORTAL</span>
+                        </div>
+                    </div> 
+                </div>
+                
+                <a href="home.html">
+                    <div class="sideNav-item">
+                        <i class="fa-light fa-house"></i> <span>Home</span>
+                    </div>
+                </a>
+                <a href="reenrollment.html">
+                    <div class="sideNav-item">
+                        <i class="fa-light fa-note"></i> <span>Re-Enrollment</span>
+                    </div>
+                </a>
+                <a href="es.html">
+                    <div class="sideNav-item">
+                        <i class="fa-light fa-bus"></i> <span>Elementary School</span>
+                    </div>
+                </a>
+                <a href="ms.html">
+                    <div class="sideNav-item">
+                        <i class="fa-light fa-book"></i> <span>Middle School</span>
+                    </div>
+                </a>
+                <a href="hs.html">
+                    <div class="sideNav-item">
+                        <i class="fa-light fa-atom-simple"></i> <span>High School</span>
+                    </div>
+                </a>
+                <a href="athletics.html">
+                    <div class="sideNav-item active">
+                        <i class="fa-light fa-whistle"></i> <span>Athletics</span>
+                    </div>
+                </a>
+                <a href="activities.html">
+                    <div class="sideNav-item">
+                        <i class="fa-light fa-person-running"></i> <span>Activities</span>
+                    </div>
+                </a>
+                <a href="finearts.html">
+                    <div class="sideNav-item">
+                        <i class="fa-light fa-masks-theater"></i> <span>Fine Arts</span>
+                    </div>
+                </a>
+                <a href="downloads.html">
+                    <div class="sideNav-item">
+                        <i class="fa-light fa-cloud-arrow-down"></i> <span>Downloads</span>
+                    </div>
+                </a>
+
+
+            </div>
+        </div>
+
+        <div class="flex-fill w-100">
+            <div class="mainDiv">
+
+                <div class="d-flex mb-4">
+				
+                    <div class="flex-grow-1 ms-3 align-self-center">
+                      <div class="lh-1">
+                        <h2>ADMIN <span>ATHLETICS</span></h2>
+                      </div>
+                    </div>
+  
+  
+                    <div id="divProfile" class="flex-shrink-0 align-self-center">
+                        <div class="d-flex">
+                          <div class="flex-fill profile-name">
+                              <p class="mb-0 fw-bold">Rosel Ann</p>
+                              <small style="color:gray">labradorr@ismanila.org</small>
+                          </div>
+                          <img src="../Images/icon_profile.png" class="profile-login">
+                        </div>
+                    </div>
+  
+                </div>
+
+                
+          
+
+                
+            </div>
+
+           
+        </div>
+
+    </div>
+
+   
+</body>
+
+
+
+<script>
+
+  
+
+
+    
+</script>
+
+
+</html>
+
+
