@@ -69,22 +69,22 @@
                         <i class="fa-light fa-atom-simple"></i> <span>High School</span>
                     </div>
                 </a>
-                <a href="athletics.html">
+                <a href="athletics.html" class="d-none">
                     <div class="sideNav-item">
                         <i class="fa-light fa-whistle"></i> <span>Athletics</span>
                     </div>
                 </a>
-                <a href="activities.html">
+                <a href="activities.html" class="d-none">
                     <div class="sideNav-item">
                         <i class="fa-light fa-person-running"></i> <span>Activities</span>
                     </div>
                 </a>
-                <a href="finearts.html">
+                <a href="finearts.html" class="d-none">
                     <div class="sideNav-item">
                         <i class="fa-light fa-masks-theater"></i> <span>Fine Arts</span>
                     </div>
                 </a>
-                <a href="downloads.html">
+                <a href="downloads.html" class="d-none">
                     <div class="sideNav-item">
                         <i class="fa-light fa-cloud-arrow-down"></i> <span>Downloads</span>
                     </div>
@@ -108,11 +108,30 @@
   
                     <div id="divProfile" class="flex-shrink-0 align-self-center">
                         <div class="d-flex">
-                          <div class="flex-fill profile-name">
+                          <!-- <div class="flex-fill profile-name">
                               <p class="mb-0 fw-bold">Rosel Ann</p>
                               <small style="color:gray">labradorr@ismanila.org</small>
-                          </div>
-                          <img src="Images/icon_profile.png" class="profile-login">
+                          </div> -->
+
+                            <div class="dropdown">
+                                <img src="Images/icon_profile.png" class="profile-login dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+
+                                <ul class="dropdown-menu shadow border-0">
+
+                                    <div class="p-4">
+                                        <div class="d-flex flex-column justify-content-center align-items-center">
+                                            <img src="Images/icon_profile.png" class="profile-login2 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> 
+                                            <span class="fw-bold mt-3">Rosel Ann Aba</span>
+                                            <span>roselannaba@ismanila.org</span>
+                                           
+                                            <button class="btn btn-danger mt-3 w-100" type="button">Logout</button>
+
+                                        </div>
+                                    </div>
+
+                                </ul>
+                            </div>
+
                         </div>
                     </div>
   

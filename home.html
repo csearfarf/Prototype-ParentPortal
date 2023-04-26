@@ -13,10 +13,13 @@
 	<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Stylesheet/style.css"/>
     <link rel="stylesheet" href="Stylesheet/style-mobile.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/venobox/2.0.4/venobox.min.css" integrity="sha512-HFaR9dTfvVVIkca85XvaYOlbZqtyRp5f7cyfb3ycnQU60RM1qjmJKq7qZPLDI+nudOkFDuY5giiwQqfbP7M36g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 	<script src="https://kit.fontawesome.com/cbb8b7ea9e.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/2.0.4/venobox.min.js" integrity="sha512-KX9LF4BMXOG6qr9aGjFIPK1xysZAHWXpuZW6gnRi6oM+41qa8x4zaLPkckNxz5veoSWzmV5HZqPMMtknU+431g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 </head>
 
 
@@ -70,22 +73,22 @@
                         <i class="fa-light fa-atom-simple"></i> <span>High School</span>
                     </div>
                 </a>
-                <a href="athletics.html">
+                <a href="athletics.html" class="d-none">
                     <div class="sideNav-item">
                         <i class="fa-light fa-whistle"></i> <span>Athletics</span>
                     </div>
                 </a>
-                <a href="activities.html">
+                <a href="activities.html" class="d-none">
                     <div class="sideNav-item">
                         <i class="fa-light fa-person-running"></i> <span>Activities</span>
                     </div>
                 </a>
-                <a href="finearts.html">
+                <a href="finearts.html" class="d-none">
                     <div class="sideNav-item">
                         <i class="fa-light fa-masks-theater"></i> <span>Fine Arts</span>
                     </div>
                 </a>
-                <a href="downloads.html">
+                <a href="downloads.html" class="d-none">
                     <div class="sideNav-item">
                         <i class="fa-light fa-cloud-arrow-down"></i> <span>Downloads</span>
                     </div>
@@ -109,11 +112,30 @@
   
                     <div id="divProfile" class="flex-shrink-0 align-self-center">
                         <div class="d-flex">
-                          <div class="flex-fill profile-name">
+                          <!-- <div class="flex-fill profile-name">
                               <p class="mb-0 fw-bold">Rosel Ann</p>
                               <small style="color:gray">labradorr@ismanila.org</small>
-                          </div>
-                          <img src="Images/icon_profile.png" class="profile-login">
+                          </div> -->
+
+                            <div class="dropdown">
+                                <img src="Images/icon_profile.png" class="profile-login dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+
+                                <ul class="dropdown-menu shadow border-0">
+
+                                    <div class="p-4">
+                                        <div class="d-flex flex-column justify-content-center align-items-center">
+                                            <img src="Images/icon_profile.png" class="profile-login2 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> 
+                                            <span class="fw-bold mt-3">Rosel Ann Aba</span>
+                                            <span>roselannaba@ismanila.org</span>
+                                           
+                                            <button class="btn btn-danger mt-3 w-100" type="button">Logout</button>
+
+                                        </div>
+                                    </div>
+
+                                </ul>
+                            </div>
+
                         </div>
                     </div>
   
@@ -139,9 +161,11 @@
                                 </div>
                                 
                                 <div class="align-items-end mt-2 ms-5">
-                                    <i class="fa-solid fa-file-lines report-file file-rc" data-bs-toggle="tooltip" data-bs-placement="top" title="Report Card"></i>
-                                    <i class="fa-solid fa-file-lines report-file file-cas" data-bs-toggle="tooltip" data-bs-placement="top" title="CAS"></i>
-                                    <i class="fa-solid fa-file-lines report-file file-esl" data-bs-toggle="tooltip" data-bs-placement="top" title="ESL"></i>
+                                    <a class="preview-file" data-vbtype="iframe" href="https://drive.google.com/file/d/1lxT2EF1u5p6Y0e67dmTQ1omGsPp5oRLN/preview" loading="lazy">
+                                        <i class="fa-kit fa-report-reportcard report-file file-rc" data-bs-toggle="tooltip" data-bs-placement="top" title="Report Card"></i>
+                                    </a>
+                                    <i class="fa-kit fa-report-reportcard report-file file-cas" data-bs-toggle="tooltip" data-bs-placement="top" title="CAS"></i>
+                                    <i class="fa-kit fa-report-reportcard report-file file-esl" data-bs-toggle="tooltip" data-bs-placement="top" title="ESL"></i>
                                 </div>
                                 
                             </div>
@@ -160,11 +184,11 @@
                                 </div>
                                 
                                 <div class="align-items-end mt-2 ms-5">
-                                    <i class="fa-solid fa-file-lines report-file file-rc" data-bs-toggle="tooltip" data-bs-placement="top" title="Report Card"></i>
-                                    <i class="fa-solid fa-file-lines report-file file-cas" data-bs-toggle="tooltip" data-bs-placement="top" title="CAS"></i>
-                                    <i class="fa-solid fa-file-lines report-file file-map" data-bs-toggle="tooltip" data-bs-placement="top" title="MAP"></i>
-                                    <i class="fa-solid fa-file-lines report-file file-hc" data-bs-toggle="tooltip" data-bs-placement="top" title="HC"></i>
-                                    <i class="fa-solid fa-file-lines report-file file-esl" data-bs-toggle="tooltip" data-bs-placement="top" title="ESL"></i>
+                                    <i class="fa-kit fa-report-reportcard report-file file-rc" data-bs-toggle="tooltip" data-bs-placement="top" title="Report Card"></i>
+                                    <i class="fa-kit fa-report-reportcard report-file file-cas" data-bs-toggle="tooltip" data-bs-placement="top" title="CAS"></i>
+                                    <i class="fa-kit fa-report-reportcard report-file file-map" data-bs-toggle="tooltip" data-bs-placement="top" title="MAP"></i>
+                                    <i class="fa-kit fa-report-reportcard report-file file-hc" data-bs-toggle="tooltip" data-bs-placement="top" title="HC"></i>
+                                    <i class="fa-kit fa-report-reportcard report-file file-esl" data-bs-toggle="tooltip" data-bs-placement="top" title="ESL"></i>
                                 </div>
                                 
                             </div>
@@ -183,10 +207,10 @@
                                 </div>
                                 
                                 <div class="align-items-end mt-2 ms-5">
-                                    <i class="fa-solid fa-file-lines report-file file-rc" data-bs-toggle="tooltip" data-bs-placement="top" title="Report Card"></i>
-                                    <i class="fa-solid fa-file-lines report-file file-cas" data-bs-toggle="tooltip" data-bs-placement="top" title="CAS"></i>
-                                    <i class="fa-solid fa-file-lines report-file file-map" data-bs-toggle="tooltip" data-bs-placement="top" title="MAP"></i>
-                                    <i class="fa-solid fa-file-lines report-file file-hc" data-bs-toggle="tooltip" data-bs-placement="top" title="HC"></i>
+                                    <i class="fa-kit fa-report-reportcard report-file file-rc" data-bs-toggle="tooltip" data-bs-placement="top" title="Report Card"></i>
+                                    <i class="fa-kit fa-report-reportcard report-file file-cas" data-bs-toggle="tooltip" data-bs-placement="top" title="CAS"></i>
+                                    <i class="fa-kit fa-report-reportcard report-file file-map" data-bs-toggle="tooltip" data-bs-placement="top" title="MAP"></i>
+                                    <i class="fa-kit fa-report-reportcard report-file file-hc" data-bs-toggle="tooltip" data-bs-placement="top" title="HC"></i>
                                 </div>
                                 
                             </div>
@@ -272,7 +296,7 @@
 
                                     <div id="flush-guide" class="accordion-collapse collapse show" data-bs-parent="#accordionHome">
                                         <div class="accordion-body loader-search">
-                                            <iframe class="mt-3" style="width:100%;height:400px;" src="https://online.anyflip.com/bxvn/tcob/index.html" seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true"></iframe>
+                                            <iframe style="width:100%;height:400px;" src="https://online.anyflip.com/bxvn/tcob/index.html" seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true"></iframe>
                                         </div>
                                     </div>
 
@@ -292,7 +316,7 @@
 
                                     <div id="flush-calendar" class="accordion-collapse collapse" data-bs-parent="#accordionHome">
                                         <div class="accordion-body loader-search">
-                                            <iframe class="mt-3" style="width:100%;height:400px" src="https://online.anyflip.com/bxvn/pkrs/mobile/" seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true"></iframe>
+                                            <iframe style="width:100%;height:400px" src="https://online.anyflip.com/bxvn/pkrs/mobile/" seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true"></iframe>
                                         </div>
                                     </div>
 
@@ -382,7 +406,7 @@
                         </div>
                     </a>
 				</div>
-                <div class="flex-fill align-self-start">
+                <div class="flex-fill align-self-start d-none">
                     <a href="athletics.html">
                         <div class="sideNav-mobile-item">			  		
                             <i class="fa-light fa-atom-simple"></i><br>
@@ -390,7 +414,7 @@
                         </div>
                     </a>
 				</div>
-                <div class="flex-fill align-self-start">
+                <div class="flex-fill align-self-start d-none">
                     <a href="activities.html">
                         <div class="sideNav-mobile-item">			  		
                             <i class="fa-light fa-atom-simple"></i><br>
@@ -398,7 +422,7 @@
                         </div>
                     </a>
 				</div>
-                <div class="flex-fill align-self-start">
+                <div class="flex-fill align-self-start d-none">
                     <a href="activities.html">
                         <div class="sideNav-mobile-item">			  		
                             <i class="fa-light fa-atom-simple"></i><br>
@@ -431,6 +455,13 @@
     });
 </script>
 
+<script>
+    new VenoBox({
+        selector: ".preview-file",
+        share: true,
+        border: "5px"
+    });
+</script>
 
 </html>
 

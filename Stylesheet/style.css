@@ -132,8 +132,22 @@ small {
 .profile-login{
     width: 40px;
     height: 40px;
+    cursor: pointer;
 }
 
+.profile-login2{
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    min-width: 20rem;
+}
+
+.preview-file > div > div > span {
+    color: #404040;
+}
 
 hr.dashed {
     border-top: 1px dashed #e3e3e3;
@@ -147,6 +161,7 @@ hr.dashed2 {
 
 .report-file{
     font-size: 24px;
+    width: 24px;
     cursor: pointer;
 }
 
@@ -195,9 +210,13 @@ h2{
 }
 
 h2 span{
-    color: #FDB813;
+    color: #a9a436;
     border-left: 1px solid gray;
     padding-left: 10px;
+}
+
+iframe {
+    margin-top:15px
 }
 
 .profile-name{
@@ -226,12 +245,13 @@ h2 span{
     text-align: center;
     padding: 2px;
     border-radius: 10px;
-    border: 1px solid #A9A436;
+    border: 1px solid #1e4c2b;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .quick-item:hover{
-    background: #a9a436;
+    background: #1e4c2b;
 }
 
 .quick-item:hover > i {
@@ -240,17 +260,17 @@ h2 span{
 
 .quick-item:hover > .quick-name {
     background: white;
-    color: #a9a436;
+    color: #1e4c2b;
 }
 
 .quick-item i{
     font-size: 80px;
-    color: #a9a436;
+    color: #1e4c2b;
     padding: 8px;
 }
 
 .quick-name {
-    background: #A9A436;
+    background: #1e4c2b;
     color: white;
     font-size: 12px;
     border-bottom-left-radius: 10px;
