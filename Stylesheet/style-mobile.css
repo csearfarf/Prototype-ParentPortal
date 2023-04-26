@@ -1,7 +1,6 @@
 
 /* Mobile */
 
-
 .sideNav-mobile {
     /* height: 11.5vh;
     padding: 0px 15px; */
@@ -21,6 +20,7 @@
 .sideNav-mobile-item {
     text-align: center;
     padding: 15px 5px;
+    margin-bottom: 10px;
 }
 
 .sideNav-mobile-item:hover {
@@ -37,7 +37,12 @@
     height: 45px;
 }
 
-.sideNav-mobile-item span {
+.sideNav-mobile-item p {
+    margin-bottom: 0;
+    line-height: 1;
+}
+
+.sideNav-mobile-item p span {
     font-size: 9px;
     color: #cdd5cf;
 }
@@ -48,7 +53,7 @@
     transition: 0.3s;
 }
 
-.sideNav-mobile-item.active > span, .sideNav-mobile-item:hover > span {
+.sideNav-mobile-item.active > p > span, .sideNav-mobile-item:hover > p > span {
     color: #2f6240;
     font-weight: bold;
 }
