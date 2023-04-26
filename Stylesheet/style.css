@@ -12,14 +12,14 @@ h2{
     margin-bottom: 0;
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     width: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
     background: #A9A436; 
     border-radius: 20px;
-}
+} */
 
 body {
     background: #1e4c2b;
@@ -244,7 +244,7 @@ iframe {
 .quick-item{
     text-align: center;
     padding: 2px;
-    border-radius: 10px;
+    border-radius: 15px;
     border: 1px solid #1e4c2b;
     cursor: pointer;
     transition: 0.3s;
@@ -273,8 +273,8 @@ iframe {
     background: #1e4c2b;
     color: white;
     font-size: 12px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
     padding: 5px;
 }
 

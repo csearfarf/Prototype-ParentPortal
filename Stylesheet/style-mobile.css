@@ -3,9 +3,19 @@
 
 
 .sideNav-mobile {
-    height: 11.5vh;
-    padding: 0px 15px;
+    /* height: 11.5vh;
+    padding: 0px 15px; */
 
+    padding: 0px 15px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1030;
+    background: #1e4c2b;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
 }
 
 .sideNav-mobile-item {
@@ -106,10 +116,12 @@
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
         border-top-left-radius: 0px;
-        height: 87.5vh;
+        /* height: 87.5vh; */
         padding: 30px;
-        overflow-y: auto;
+        /* overflow-y: auto; */
         margin-top: 0px;
+        padding-bottom: 120px;
+      
     }
 
     .profile-name{
