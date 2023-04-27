@@ -14,11 +14,13 @@
     <link rel="stylesheet" href="Stylesheet/style.css"/>
     <link rel="stylesheet" href="Stylesheet/style-mobile.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/venobox/2.0.4/venobox.min.css" integrity="sha512-HFaR9dTfvVVIkca85XvaYOlbZqtyRp5f7cyfb3ycnQU60RM1qjmJKq7qZPLDI+nudOkFDuY5giiwQqfbP7M36g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/busy-load@0.1.2/dist/app.min.css">
 
 	<script src="https://kit.fontawesome.com/cbb8b7ea9e.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/2.0.4/venobox.min.js" integrity="sha512-KX9LF4BMXOG6qr9aGjFIPK1xysZAHWXpuZW6gnRi6oM+41qa8x4zaLPkckNxz5veoSWzmV5HZqPMMtknU+431g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/busy-load@0.1.2/dist/app.min.js"></script>
 
 </head>
 
@@ -117,7 +119,7 @@
                               <small style="color:gray">labradorr@ismanila.org</small>
                           </div> -->
 
-                            <div class="dropdown">
+                            <div class="dropdowns">
                                 <img src="Images/icon_profile.png" class="profile-login dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
 
                                 <ul class="dropdown-menu shadow border-0">
@@ -159,9 +161,10 @@
                                         <small>121239 - Grade 11</small>
                                     </div>
                                 </div>
+
                                 
                                 <div class="align-items-end mt-2 ms-5">
-                                    <a class="preview-file" data-vbtype="iframe" href="https://drive.google.com/file/d/1lxT2EF1u5p6Y0e67dmTQ1omGsPp5oRLN/preview" loading="lazy">
+                                    <a class="preview-file" data-vbtype="iframe" href="https://communityext.ismanila.org/ISMStudentReportCard/EnCt2f3b780a0485ee5241e698e86a9016b1013e6b03cf3b780a0485ee5241e698e86JRC2/2223/S1/02/ISMRptCard2223S102154477.pdf" loading="lazy">
                                         <i class="fa-kit fa-report-reportcard report-file file-rc" data-bs-toggle="tooltip" data-bs-placement="top" title="Report Card"></i>
                                     </a>
                                     <i class="fa-kit fa-report-reportcard report-file file-cas" data-bs-toggle="tooltip" data-bs-placement="top" title="CAS"></i>
@@ -347,6 +350,32 @@
                             </div>
                             <!-- End of Announcements -->
 
+                            <!-- Youtube -->
+                            <div class="accordion-item">
+                                <div class="card shadow-sm mb-3">
+                                    <div class="d-flex accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#flush-youtube" aria-expanded="false" aria-controls="flush-youtube">
+                                        <div class="flex-grow-1 align-self-center">
+                                            <h5 class="mb-0">Youtube</h5>
+                                            <small>Important information, events and updates</small>
+                                        </div>                               
+                                    </div>
+
+                                  
+
+                                    <div id="flush-youtube" class="accordion-collapse collapse" data-bs-parent="#accordionHome">
+                                        <div class="accordion-body loader-search">
+                                            <a class="preview-file w-100 vbox-item" data-vbtype="video" href="https://www.youtube.com/embed/cD6pwEe4ONI?controls=0">
+                                                <img class="yt-thumb" src="https://img.youtube.com/vi/cD6pwEe4ONI/sddefault.jpg">
+                                            </a>
+                                            <!-- <iframe style="width:100%;height:400px" src="https://www.youtube.com/embed/cD6pwEe4ONI?controls=0" seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true"></iframe> -->
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- End of Youtube -->
+
+
 
 
                            
@@ -461,8 +490,30 @@
         share: true,
         border: "5px"
     });
+
+    // $(".card").busyLoad("show", {
+    //     image: "./Images/loader.gif"
+    // });
+
+    // let count = 1; 
+    // let interval = setInterval(function(){ 
+    //     count--; 
+    //     if (count <= 0) { 
+    //         clearInterval(interval); 
+    //         $(".card").busyLoad("hide");
+    //     } 
+    // }, 1000);
+
+  
 </script>
 
+<!-- 
+<style>
+    .busy-load-container {
+        background-color: white !important;
+        border-radius: 8px;
+    }
+</style> -->
 </html>
 
 

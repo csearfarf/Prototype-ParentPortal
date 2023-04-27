@@ -143,6 +143,8 @@ small {
 
 .dropdown-menu {
     min-width: 20rem;
+    border-radius: 20px;
+    margin-top: 10px !important;
 }
 
 .preview-file > div > div > span {
@@ -160,7 +162,7 @@ hr.dashed2 {
 }
 
 .report-file{
-    font-size: 24px;
+    font-size: 28px;
     width: 24px;
     cursor: pointer;
 }
@@ -510,3 +512,12 @@ iframe {
     background: white;
 }
 
+.vbox-child {
+    height: 90vh;
+    background: none !important;
+}
+
+.yt-thumb {
+    width: 100%;
+    margin-top: 10px;
+}
