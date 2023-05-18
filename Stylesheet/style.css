@@ -151,6 +151,17 @@ small {
     color: #404040;
 }
 
+.report-container{
+    padding-right: 20px; padding-top:15px; padding-bottom:15px;
+}
+.report-container-dash{
+    border-left: 1px dashed #e3e3e3;
+}
+
+.report-sem {
+    font-weight: bold; font-size: 10px; color: #cdcdcd; position: absolute; margin-top: -15px; margin-left: -7px;
+}
+
 hr.dashed {
     border-top: 1px dashed #e3e3e3;
     margin: 10px 0px;
@@ -162,7 +173,7 @@ hr.dashed2 {
 }
 
 .report-file{
-    font-size: 28px;
+    font-size: 30px;
     width: 24px;
     cursor: pointer;
 }
